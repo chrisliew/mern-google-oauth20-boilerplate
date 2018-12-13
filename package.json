@@ -1,0 +1,23 @@
+{
+  "name": "mern-google-oauth20-boilerplate",
+  "version": "1.0.0",
+  "description": "Mern Google OAuth20 boilerplate",
+  "main": "server.js",
+  "engines": {
+    "node": "8.9.4",
+    "npm": "6.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js"
+  },
+  "author": "Chris Liew",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.16",
+    "nodemon": "^1.18.8",
+    "passport-google-oauth20": "^1.0.0"
+  }
+}
