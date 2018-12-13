@@ -11,6 +11,7 @@ router.get('/test', (req, res) => {
 // @route   GET /auth/google/
 // @desc    Login Page for Google OAuth
 // @access  Public
-router.get('/');
+
+// router.get('/');
 
 module.exports = router;
