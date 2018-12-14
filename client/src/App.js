@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+import Home from './Components/Home';
+
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className='App'>
-        <h1>MERN Google Oauth20 Boilerplate</h1>
-        <a href='/auth/google'>Login With Google</a>
-      </div>
+      <Router>
+        <div className='App'>
+          <Route exact path='/' component={Home} />
+        </div>
+      </Router>
     );
   }
 }
