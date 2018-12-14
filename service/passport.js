@@ -24,7 +24,8 @@ passport.use(
     {
       clientID: keys.googleClientId,
       clientSecret: keys.googleClientSecret,
-      callbackURL: '/auth/google/callback'
+      callbackURL: '/auth/google/callback',
+      proxy: true
     },
     (accessToken, refreshToken, profile, done) => {
       // create a new user if no existing user. Reaching out to database, returns Asyn action, so must use promise.
