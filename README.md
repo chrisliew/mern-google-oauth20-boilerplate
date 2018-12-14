@@ -10,4 +10,6 @@
 
 5. Setup Dev and Prod (Google Oauth 2nd one, Mongo 2nd one). Right now, one set of keys. create dev, and prod.js in config. prod has just process.env and dev is now gitignored. the keys contains the logic. setup new Heroku config, with Google Developer client secret and id, and new mongodb url. Will get redirect error, is going to http instead of https. Will need to add proxy into package.json. and proxy: true into the passport.js
 
-6. Setup Client with concurrently and homepage that links to Google Oauth flow. Must setup setupProxy.js and inside of it, npm install http-proxy-middleware into client, require http-proxy-middleware then proxy /auth/google with target: localhost:5000
+6. Setup Client with concurrently and homepage that links to Google Oauth flow. npm install http-proxy-middleware into client, Must setup setupProxy.js and inside of it, require http-proxy-middleware then proxy /auth/google with target: localhost:5000
+
+7. Setup Heroku Post Build scripts
