@@ -22,8 +22,7 @@ router.get(
   '/auth/google/callback',
   passport.authenticate('google'),
   (req, res) => {
-    // res.redirect('/');
-    res.json({ sup: 'sup' });
+    res.redirect('/surveys');
   }
 );
 
@@ -33,7 +32,7 @@ router.get('/api/current_user', (req, res) => {
 
 router.get('/api/logout', (req, res) => {
   req.logout();
-  res.send(req.user);
+  res.redirect('/');
 });
 
 module.exports = router;
